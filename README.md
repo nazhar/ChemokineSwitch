@@ -37,9 +37,9 @@ The folder 'model_rules' contains text files for different versions of the model
 ```sh 
 python sim.py
 ``` 
-This creates a directory named 'model_output' and write csv files with the simulation results.
+This creates a directory named 'model_output' and writes csv files with the simulation results.
 
-An short R script ```plot_sim_results.R``` is also included for plotting the results in figures similar to the ones in the paper.
+A short R script ```plot_sim_results.R``` is also included for plotting the results in figures similar to the ones in the paper.
 
 To generate a state transition diagram for each of the models for both moderate and severe injury:
 
