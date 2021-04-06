@@ -1,0 +1,18 @@
+ISS_hi = True
+ISS = True
+IP10 = Random
+IP10_hi = Random
+MCP1 = Random
+MCP1_hi = Random
+MIG = Random
+IL6 = Random
+IL6_hi = Random
+
+
+1: IP10_hi* = IP10 or not (MCP1 or MIG)
+1: IP10* =  not ISS or not (MCP1 and MIG)
+1: MCP1* = ISS_hi or (MCP1 and not IP10_hi)
+1: MCP1_hi* = ISS_hi and MCP1 and not IP10_hi
+1: MIG* = ISS and MIG and not IP10_hi and not MCP1
+1: IL6* = MIG or MCP1
+1: IL6_hi* = MCP1 and not IP10_hi
